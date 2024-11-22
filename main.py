@@ -27,6 +27,11 @@ def time_(msg: Message):
     current_time_mos = datetime.datetime.now(time_moscow).strftime('%H:%M:%S   %d/%m/%Y')
     bot.send_message(msg.chat.id, f'Текущее время: {current_time}\nТекущая дата: {current_date}. \nТекущее время и дата в Москве: {current_time_mos}')
 
+@bot.message_handler(['menu'])
+def menu(msg: Message):
+    '''команда, которая выдаст всевозможные команды для бота'''
+    bot.send_message(msg.chat.id, '''Все доступные команды для бота: 
+/time, /info''')
 
 
 

@@ -14,6 +14,7 @@ def start(msg: telebot.types.Message):
 
 @bot.message_handler(['info'])#fghj
 def info(msg: Message):
+    #инфа о разработчике
     bot.send_message(msg.chat.id, f'Инфоомация разработчика(ФИО): Саляхов Альмир Артурович. \nПочта: asalyahov2007@gmail.com. \nТелеграмм: @almirthebest')
 
 @bot.message_handler(['time'])

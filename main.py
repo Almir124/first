@@ -12,7 +12,7 @@ def start(msg: telebot.types.Message):
     #а я просто комментарий
 
 
-@bot.message_handler(['info'])
+@bot.message_handler(['info'])#fghj
 def info(msg: Message):
     bot.send_message(msg.chat.id, f'Инфоомация разработчика(ФИО): Саляхов Альмир Артурович. \nПочта: asalyahov2007@gmail.com. \nТелеграмм: @almirthebest')
 
